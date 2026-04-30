@@ -32,7 +32,7 @@ function AuthLayout() {
             Master your money, <span className="gradient-text">shape your future</span>.
           </h2>
           <p className="mt-4 text-white/70">
-            Join thousands building better financial habits with AI-powered insights.
+            Join thousands building better financial habits with FinTrack.
           </p>
         </div>
 

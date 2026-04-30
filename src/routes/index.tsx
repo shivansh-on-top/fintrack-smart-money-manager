@@ -1,7 +1,7 @@
 // Landing page — hero, features, testimonials, CTA, footer
 import { createFileRoute, Link } from "@tanstack/react-router";
 import {
-  TrendingUp, PieChart, Sparkles, Target, Layers,
+  TrendingUp, PieChart, Target, Layers,
   ShieldCheck, ArrowRight, Star, Wallet,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -13,14 +13,13 @@ export const Route = createFileRoute("/")({
 const FEATURES = [
   { icon: TrendingUp, title: "Track Expenses", desc: "Log income & expenses in seconds with smart categorization." },
   { icon: PieChart, title: "Beautiful Charts", desc: "Visualize your spending patterns with stunning, interactive charts." },
-  { icon: Sparkles, title: "AI Insights", desc: "Get personalized financial advice powered by Gemini AI." },
   { icon: Target, title: "Budget Goals", desc: "Set monthly budgets and stay on track with visual progress bars." },
   { icon: Layers, title: "Multi-Category", desc: "Organize across 9+ categories from groceries to investments." },
   { icon: ShieldCheck, title: "Secure Cloud Sync", desc: "Bank-grade encryption keeps your data safe across all devices." },
 ];
 
 const TESTIMONIALS = [
-  { name: "Aarav Mehta", role: "Freelance Designer", quote: "FinTrack changed how I think about money. The AI insights spotted leaks I never noticed.", rating: 5 },
+  { name: "Aarav Mehta", role: "Freelance Designer", quote: "FinTrack changed how I manage money. It spotted spending leaks I never noticed.", rating: 5 },
   { name: "Priya Sharma", role: "Software Engineer", quote: "The cleanest finance app I've used. I finally understand where every rupee goes.", rating: 5 },
   { name: "Rohan Kapoor", role: "Small Business Owner", quote: "Budget tracking that doesn't feel like a chore. The charts are gorgeous.", rating: 5 },
 ];
@@ -55,18 +54,13 @@ function Landing() {
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-chart-2/20 rounded-full blur-3xl" />
 
         <div className="container mx-auto px-6 relative z-10 text-center">
-          <div className="inline-flex items-center gap-2 glass-dark px-4 py-1.5 rounded-full mb-8 animate-fade-in">
-            <Sparkles className="h-3.5 w-3.5 text-accent" />
-            <span className="text-xs font-medium text-white/90">AI-powered financial insights</span>
-          </div>
-
           <h1 className="text-5xl md:text-7xl font-bold text-white max-w-4xl mx-auto leading-[1.05] animate-slide-up">
             Master Your Money,{" "}
             <span className="gradient-text">Shape Your Future</span>
           </h1>
 
           <p className="mt-8 text-lg md:text-xl text-white/70 max-w-2xl mx-auto animate-slide-up" style={{ animationDelay: "0.1s" }}>
-            FinTrack helps you track every rupee, set smart budgets, and unlock AI-powered insights that turn your spending data into wealth-building decisions.
+            FinTrack helps you track every rupee, set smart budgets, and turn your spending data into wealth-building decisions.
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center animate-slide-up" style={{ animationDelay: "0.2s" }}>
@@ -88,7 +82,7 @@ function Landing() {
               {[
                 { v: "₹2.4L", l: "Tracked monthly" },
                 { v: "9+", l: "Categories" },
-                { v: "AI", l: "Smart insights" },
+                { v: "Real-time", l: "Analytics" },
                 { v: "100%", l: "Secure" },
               ].map((s) => (
                 <div key={s.l} className="text-center">
