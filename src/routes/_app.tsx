@@ -3,7 +3,7 @@ import { createFileRoute, Link, Outlet, useLocation, useNavigate } from "@tansta
 import { useEffect, useState } from "react";
 import {
   LayoutDashboard, ListPlus, Receipt, Target,
-  BarChart3, Sparkles, User, LogOut, Wallet, Menu, X,
+  BarChart3, User, LogOut, Wallet, Menu, X,
 } from "lucide-react";
 import { useAuth } from "@/hooks/use-auth";
 import { supabase } from "@/integrations/supabase/client";
@@ -20,7 +20,6 @@ const NAV = [
   { to: "/add", label: "Add", icon: ListPlus },
   { to: "/budgets", label: "Budgets", icon: Target },
   { to: "/analytics", label: "Analytics", icon: BarChart3 },
-  { to: "/insights", label: "AI Insights", icon: Sparkles },
   { to: "/profile", label: "Profile", icon: User },
 ] as const;
 
