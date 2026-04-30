@@ -4,7 +4,7 @@ import type { Database } from './types';
 
 function createSupabaseClient() {
   const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL ?? "https://vjlafhcqlkgxhvfsdsce.supabase.co";
-  const SUPABASE_PUBLISHABLE_KEY = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY ?? "sb_publishable_h1FgRAvlvBzU3sjaoYWneg_KVZVmrvr";
+  const SUPABASE_PUBLISHABLE_KEY = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY ?? "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZqbGFmaGNxbGtneGh2ZnNkc2NlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzc1NDU4MDYsImV4cCI6MjA5MzEyMTgwNn0.14CIrJnUYK9pts6VHLhsLAypi9X9Q4b8DkVRv_5qN_M";
 
   if (!SUPABASE_URL || !SUPABASE_PUBLISHABLE_KEY) {
     throw new Error(
