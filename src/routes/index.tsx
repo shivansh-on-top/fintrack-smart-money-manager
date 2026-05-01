@@ -38,7 +38,7 @@ function Landing() {
           </Link>
           <div className="flex items-center gap-3">
             <Link to="/login">
-              <Button variant="ghost" className="text-white/150 hover:bg-green/60 hover:text-black">Login</Button>
+              <Button variant="ghost" className="text-white/200 hover:bg-green/10 hover:text-black">Login</Button>
             </Link>
             <Link to="/signup">
               <Button variant="hero">Get Started</Button>
@@ -70,7 +70,7 @@ function Landing() {
               </Button>
             </Link>
             <Link to="/login">
-              <Button variant="glass" size="xl" className="w-full sm:w-auto !text-white border-white/20">
+              <Button variant="glass" size="xl" className="w-full sm:w-auto !text-white border-green/80">
                 Login
               </Button>
             </Link>
