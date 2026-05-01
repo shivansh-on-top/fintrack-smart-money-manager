@@ -71,7 +71,7 @@ function Signup() {
           <Label htmlFor="email">Email</Label>
           <div className="relative">
             <Mail className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-            <Input id="email" type="email" autoComplete="email" placeholder="YOur EMAil"
+            <Input id="email" type="email" autoComplete="email" placeholder="Your Email"
               className="pl-10 h-11" value={email} onChange={(e) => setEmail(e.target.value)} required />
           </div>
         </div>
@@ -80,13 +80,13 @@ function Signup() {
           <Label htmlFor="password">Password</Label>
           <div className="relative">
             <Lock className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-            <Input id="password" type="password" autoComplete="new-password" placeholder="At least 6 characters"
+            <Input id="password" type="password" autoComplete="new-password" placeholder="Create Password"
               className="pl-10 h-11" value={password} onChange={(e) => setPassword(e.target.value)} required />
           </div>
         </div>
 
         <Button type="submit" variant="hero" size="lg" className="w-full" disabled={loading}>
-          {loading ? <Loader2 className="h-4 w-4 animate-spin" /> : "Create account"}
+          {loading ? <Loader2 className="h-4 w-4 animate-spin" /> : "Let's get started"}
         </Button>
       </form>
 
