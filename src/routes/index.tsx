@@ -70,7 +70,10 @@ function Landing() {
               </Button>
             </Link>
             <Link to="/login">
-              <Button variant="glass" size="xl" className="w-full sm:w-auto !text-white border-green/80">
+              <Button
+  size="xl"
+  className="w-full sm:w-auto bg-white/20 text-white hover:bg-white/30 backdrop-blur-md"
+>
                 Login
               </Button>
             </Link>
@@ -82,11 +85,13 @@ function Landing() {
               {[
                 { v: "₹5L", l: "Tracked monthly" },
                 { v: "5+", l: "Categories" },
-                { v: "Real-time", l: "Analytics" },
+                { v: "Real-time", l: " Analytics" },
                 { v: "100%", l: "Secure" },
               ].map((s) => (
                 <div key={s.l} className="text-center">
-                  <div className="text-3xl md:text-4xl font-bold gradient-text">{s.v}</div>
+                  <div className="text-3xl md:text-4xl font-bold gradient-text whitespace-nowrap">
+  {s.v}
+</div>
                   <div className="mt-1 text-sm text-white/60">{s.l}</div>
                 </div>
               ))}
