@@ -38,7 +38,7 @@ function Landing() {
           </Link>
           <div className="flex items-center gap-3">
             <Link to="/login">
-              <Button variant="ghost" className="text-white/90 hover:bg-white/10 hover:text-white">Login</Button>
+              <Button variant="ghost" className="text-white/150 hover:bg-green/60 hover:text-black">Login</Button>
             </Link>
             <Link to="/signup">
               <Button variant="hero">Get Started</Button>
@@ -80,8 +80,8 @@ function Landing() {
           <div className="mt-20 max-w-4xl mx-auto animate-fade-in" style={{ animationDelay: "0.4s" }}>
             <div className="glass-dark rounded-3xl p-8 grid grid-cols-2 md:grid-cols-4 gap-6 border-white/10">
               {[
-                { v: "₹2.4L", l: "Tracked monthly" },
-                { v: "9+", l: "Categories" },
+                { v: "₹5L", l: "Tracked monthly" },
+                { v: "5+", l: "Categories" },
                 { v: "Real-time", l: "Analytics" },
                 { v: "100%", l: "Secure" },
               ].map((s) => (
