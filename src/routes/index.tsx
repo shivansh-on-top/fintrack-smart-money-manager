@@ -38,7 +38,7 @@ function Landing() {
           </Link>
           <div className="flex items-center gap-3">
             <Link to="/login">
-              <Button variant="ghost" className="text-white/200 hover:bg-green/10 hover:text-black">Login</Button>
+              <Button variant="ghost" className="text-white/90 hover:bg-white/10 hover:text-white">Login</Button>
             </Link>
             <Link to="/signup">
               <Button variant="hero">Get Started</Button>
@@ -70,10 +70,7 @@ function Landing() {
               </Button>
             </Link>
             <Link to="/login">
-              <Button
-  size="xl"
-  className="w-full sm:w-auto bg-white/20 text-white hover:bg-white/30 backdrop-blur-md"
->
+              <Button variant="glass" size="xl" className="w-full sm:w-auto !text-white border-white/20">
                 Login
               </Button>
             </Link>
@@ -81,17 +78,15 @@ function Landing() {
 
           {/* Floating stats card */}
           <div className="mt-20 max-w-4xl mx-auto animate-fade-in" style={{ animationDelay: "0.4s" }}>
-            <div className="glass-dark rounded-3xl p-8 grid grid-cols-2 md:grid-cols-4 gap-8 px-4 border-white/10">
+            <div className="glass-dark rounded-3xl p-8 grid grid-cols-2 md:grid-cols-4 gap-6 border-white/10">
               {[
-                { v: "₹5L", l: "Tracked monthly" },
-                { v: "5+", l: "Categories" },
-                { v: "Real-time", l: " Analytics" },
+                { v: "₹2.4L", l: "Tracked monthly" },
+                { v: "9+", l: "Categories" },
+                { v: "Real-time", l: "Analytics" },
                 { v: "100%", l: "Secure" },
               ].map((s) => (
-                <div key={s.l} className="text-centerflex flex-col items-center">
-                  <div className="text-2xl md:text-3xl font-bold gradient-text">
-  {s.v}
-</div>
+                <div key={s.l} className="text-center">
+                  <div className="text-3xl md:text-4xl font-bold gradient-text">{s.v}</div>
                   <div className="mt-1 text-sm text-white/60">{s.l}</div>
                 </div>
               ))}

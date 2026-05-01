@@ -52,7 +52,7 @@ function Login() {
           <Label htmlFor="email">Email</Label>
           <div className="relative">
             <Mail className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-            <Input id="email" type="email" autoComplete="email" placeholder="Your Email"
+            <Input id="email" type="email" autoComplete="email" placeholder="you@example.com"
               className="pl-10 h-11" value={email} onChange={(e) => setEmail(e.target.value)} required />
           </div>
         </div>
@@ -73,7 +73,7 @@ function Login() {
         </div>
 
         <Button type="submit" variant="hero" size="lg" className="w-full" disabled={loading}>
-          {loading ? <Loader2 className="h-4 w-4 animate-spin" /> : "Welcome Back"}
+          {loading ? <Loader2 className="h-4 w-4 animate-spin" /> : "Login"}
         </Button>
       </form>
 

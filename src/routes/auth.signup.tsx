@@ -62,7 +62,7 @@ function Signup() {
           <Label htmlFor="fullName">Full name</Label>
           <div className="relative">
             <User className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-            <Input id="fullName" placeholder="Your name" className="pl-10 h-11"
+            <Input id="fullName" placeholder="Aarav Mehta" className="pl-10 h-11"
               value={fullName} onChange={(e) => setFullName(e.target.value)} required />
           </div>
         </div>
@@ -71,7 +71,7 @@ function Signup() {
           <Label htmlFor="email">Email</Label>
           <div className="relative">
             <Mail className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-            <Input id="email" type="email" autoComplete="email" placeholder="Your Email"
+            <Input id="email" type="email" autoComplete="email" placeholder="you@example.com"
               className="pl-10 h-11" value={email} onChange={(e) => setEmail(e.target.value)} required />
           </div>
         </div>
@@ -80,13 +80,13 @@ function Signup() {
           <Label htmlFor="password">Password</Label>
           <div className="relative">
             <Lock className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-            <Input id="password" type="password" autoComplete="new-password" placeholder="Create Password"
+            <Input id="password" type="password" autoComplete="new-password" placeholder="At least 6 characters"
               className="pl-10 h-11" value={password} onChange={(e) => setPassword(e.target.value)} required />
           </div>
         </div>
 
         <Button type="submit" variant="hero" size="lg" className="w-full" disabled={loading}>
-          {loading ? <Loader2 className="h-4 w-4 animate-spin" /> : "Let's get started"}
+          {loading ? <Loader2 className="h-4 w-4 animate-spin" /> : "Create account"}
         </Button>
       </form>
 
